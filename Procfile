@@ -1,1 +1,1 @@
-web: python sensor_server.py
+web: python mouse/sensor_server.py
