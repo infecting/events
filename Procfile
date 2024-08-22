@@ -1,1 +1,1 @@
-web: python mouse/sensor_server.py
+grpc: python mouse/sensor_server.py
