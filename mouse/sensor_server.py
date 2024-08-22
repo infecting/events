@@ -65,8 +65,8 @@ def serve():
     # This is where the server listens for requests
     server.add_insecure_port('[::]:5400')
     server.start()
-    server.wait_for_termination()
     print("gRPC server started on port 5400...")
+    server.wait_for_termination()
     # try:
     #     while True:
     #         time.sleep(86400)  # Keep the server running
