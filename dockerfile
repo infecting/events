@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 5400
 
 # Command to run the gRPC server
-CMD ["python", "your_grpc_server_script.py"]
+CMD ["python", "sensor_server.py"]
