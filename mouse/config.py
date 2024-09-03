@@ -3,7 +3,7 @@ from scipy.special import erf
 
 
 class Config:
-    def __init__(self, duration=None, freq=100, snr=.98, complexity=3, screen_size_x=1920, screen_size_y=1080, x0=0, y0=0, xf=None, yf=None):
+    def __init__(self, duration=None, freq=50, snr=.98, complexity=3, screen_size_x=1920, screen_size_y=1080, x0=0, y0=0, xf=None, yf=None):
         if duration:
             self.duration = duration
         else:

@@ -9,10 +9,10 @@ from synthesizer import Synthesizer
 sensors = []
 controller = None  # Initialize controller outside the try block
 
-for i in range(1):
+for i in range(10):
     try:
-        config = Config(duration=1.2, x0=308, y0=361,
-                        complexity=2, xf=None, yf=None)
+        config = Config(duration=1.2, x0=np.random.uniform(400, 800), y0=np.random.uniform(400, 800),
+                        complexity=3, xf=None, yf=None)
         controller = Controller(config, None, None, None, None, None)
         synthesizer = Synthesizer(config, controller)
         t, x, y, v = synthesizer.generate_mouse_data()
